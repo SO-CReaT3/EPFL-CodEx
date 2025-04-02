@@ -18,11 +18,11 @@ a, *b, c, e = L1
 print(a,b,c,e, f"- type de b: {type(b)}, type de L1: {type(L1)}", end="\n\n")
 
 def shinanigans(*weird):
-    print(type(weird))
+    return(type(weird))
 
-shinanigans(2, 34, "has")
+print(shinanigans(2, 34, "has"))
 
 def shinanigans2(**weird):
-    print(weird, type(weird))
+    return(weird, type(weird))
 
-shinanigans2(y = 4, x = "haha", end="\n\n")
+print(shinanigans2(y = 4, x = "haha"), end="\n\n")
