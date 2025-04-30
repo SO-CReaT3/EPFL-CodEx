@@ -11,3 +11,4 @@
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%205-blue)](https://github.com/AkimBerreqia/EPFL-CodEx/blob/main/Mise%20%C3%80%20Niveau/Serie_5.ipynb)
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%206-blue)](https://github.com/AkimBerreqia/EPFL-CodEx/blob/main/Mise%20%C3%80%20Niveau/Serie_6.ipynb)
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%207-blue)](https://github.com/AkimBerreqia/EPFL-CodEx/blob/main/Mise%20%C3%80%20Niveau/Serie_7.ipynb)
+[![Static Badge](https://img.shields.io/badge/S%C3%A9rie%208-blue)](https://github.com/AkimBerreqia/EPFL-CodEx/blob/main/Mise%20%C3%80%20Niveau/Serie_8.ipynb)
