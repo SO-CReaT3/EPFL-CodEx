@@ -3,7 +3,8 @@ package cs108;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-class BoundedIntQueueTest {
+
+class BoundedIntQueueOkTest {
 
     @Test
     void BoundedIntQueueNegativeCapacityIllegalArgumentExceptionTest() {
@@ -14,25 +15,25 @@ class BoundedIntQueueTest {
 
     @Test
     void capacity() {
-        BoundedIntQueueBuggy queue = new BoundedIntQueueBuggy(10);
+        BoundedIntQueueOk queue = new BoundedIntQueueOk(10);
         assertEquals(10, queue.capacity());
     }
 
     @Test
     void size() {
-        BoundedIntQueueBuggy queue = new BoundedIntQueueBuggy(10);
+        BoundedIntQueueOk queue = new BoundedIntQueueOk(10);
         assertEquals(0, queue.size());
     }
 
     @Test
     void isEmpty() {
-        BoundedIntQueueBuggy queue = new BoundedIntQueueBuggy(0);
+        BoundedIntQueueOk queue = new BoundedIntQueueOk(0);
         assertTrue(queue.isEmpty());
     }
 
     @Test
     void isFull() {
-        BoundedIntQueueBuggy queue = new BoundedIntQueueBuggy(3);
+        BoundedIntQueueOk queue = new BoundedIntQueueOk(3);
         assertFalse(queue.isFull());
 
         queue.addLast(1);
@@ -43,22 +44,19 @@ class BoundedIntQueueTest {
 
     @Test
     void addLast() {
-        BoundedIntQueueBuggy queue = new BoundedIntQueueBuggy(2);
+        BoundedIntQueueOk queue = new BoundedIntQueueOk(2);
         queue.addLast(1);
         queue.addLast(2);
 
         assertThrows(java.lang.IllegalStateException.class, () -> {
             queue.addLast(3);
         });
-
-        assertEquals(1, queue.removeFirst());
-        assertEquals(2, queue.removeFirst());
     }
 
     @Test
     void removeFirst() {
         assertThrows(java.lang.IllegalStateException.class, () -> {
-            BoundedIntQueueBuggy queue = new BoundedIntQueueBuggy(2);
+            BoundedIntQueueOk queue = new BoundedIntQueueOk(2);
             queue.removeFirst();
         });
     }

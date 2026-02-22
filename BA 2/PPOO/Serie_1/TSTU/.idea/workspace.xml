@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="309ad7eb-ee51-41a1-bcae-806fb9a9489a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cs108/BoundedIntQueueOk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TSTU.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TSTU.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TSTU/cs108/BoundedIntQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TSTU/cs108/BoundedIntQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs108/BoundedIntQueueBuggy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/cs108/BoundedIntQueueOkTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TSTU/cs108/GetSecretURL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TSTU/cs108/GetSecretURL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TSTU/cs108/BoundedIntQueueTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TSTU/cs108/BoundedIntQueueTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs108/BoundedIntQueueOk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs108/BoundedIntQueueOk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs108/GetSecretURL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs108/GetSecretURL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/cs108/BoundedIntQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs108/BoundedIntQueueTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +23,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="BoundedIntQueueOkTest.addLast" />
+    </enabled-run-configurations>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -38,10 +45,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.GetSecretURL.executor": "Run",
     "JUnit.All in TSTU.executor": "Run",
+    "JUnit.BoundedIntQueueOkTest.BoundedIntQueueNegativeCapacityIllegalArgumentExceptionTest.executor": "Run",
+    "JUnit.BoundedIntQueueOkTest.addLast.executor": "Debug",
+    "JUnit.BoundedIntQueueOkTest.executor": "Run",
+    "JUnit.BoundedIntQueueOkTest.isFull.executor": "Run",
+    "JUnit.BoundedIntQueueOkTest.removeFirst.executor": "Run",
+    "JUnit.BoundedIntQueueTest.addLast.executor": "Run",
     "JUnit.BoundedIntQueueTest.capacity.executor": "Run",
     "JUnit.BoundedIntQueueTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -55,11 +71,50 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.All in TSTU">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\berre\Documents\GitHub\EPFL-CodEx\BA 2\PPOO\Serie_1\TSTU\src\cs108" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="cs108" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BoundedIntQueueTest">
+    <configuration name="GetSecretURL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cs108.GetSecretURL" />
+      <module name="TSTU" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cs108.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in TSTU" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TSTU" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoundedIntQueueOkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TSTU" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cs108.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cs108" />
+      <option name="MAIN_CLASS_NAME" value="cs108.BoundedIntQueueOkTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -79,7 +134,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoundedIntQueueTest.capacity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoundedIntQueueTest.addLast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TSTU" />
       <extension name="coverage">
         <pattern>
@@ -89,7 +144,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="cs108" />
       <option name="MAIN_CLASS_NAME" value="cs108.BoundedIntQueueTest" />
-      <option name="METHOD_NAME" value="capacity" />
+      <option name="METHOD_NAME" value="addLast" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,9 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in TSTU" />
-        <item itemvalue="JUnit.BoundedIntQueueTest.capacity" />
         <item itemvalue="JUnit.BoundedIntQueueTest" />
+        <item itemvalue="JUnit.BoundedIntQueueTest.addLast" />
+        <item itemvalue="JUnit.BoundedIntQueueOkTest" />
+        <item itemvalue="Application.GetSecretURL" />
+        <item itemvalue="JUnit.All in TSTU" />
       </list>
     </recent_temporary>
   </component>
@@ -120,11 +177,22 @@
       <option name="presentableId" value="Default" />
       <updated>1771695700844</updated>
       <workItem from="1771695701881" duration="57000" />
-      <workItem from="1771695764037" duration="1698000" />
+      <workItem from="1771695764037" duration="1731000" />
+      <workItem from="1771763002003" duration="3596000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
