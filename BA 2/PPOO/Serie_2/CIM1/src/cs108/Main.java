@@ -10,16 +10,21 @@ public final class Main {
     public static void main(String[] args) {
         // L'image à afficher, à modifier au fur et à mesure de
         // votre avancement.
-        Image<ColorRGB> image = new Chessboard(1, ColorRGB.BLACK, ColorRGB.WHITE);
-        Image<ColorRGB> mysteriousRedDisk = new Mysterious<>(Chessboard.BASIC);
+
+        //Image<ColorRGB> image = new Chessboard(1, ColorRGB.BLACK, ColorRGB.WHITE);
+        Image<ColorRGB> mysteriousRedDisk = new Mysterious<>(Chessboard.BASIC, 1);
+
+        Image<ColorRGB> redDisk = RedDisk.IMAGE;
         Image<ColorRGB> rotatedChessboard = new Rotated<>(Chessboard.BASIC);
+
+        Image<ColorRGB> composed = new Composed(0.2, rotatedChessboard, redDisk);
 
         invokeLater(() -> {
             var mainWindow = new JFrame("Image viewer");
             mainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
             mainWindow.getContentPane().setLayout(new BorderLayout());
-            var imageComponent = new ImageComponent(rotatedChessboard, 0, 0, 4);
+            var imageComponent = new ImageComponent(composed, 0, 0, 4);
             mainWindow.getContentPane().add(imageComponent, BorderLayout.CENTER);
 
             mainWindow.pack();
