@@ -1,4 +1,5 @@
 # EPFL-CodEx
+
 ## [Mise À Niveau (MÀN)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/Mise%20%C3%80%20Niveau)
 ### Test files
 [![Static Badge](https://img.shields.io/badge/School%20Test-red)](https://github.com/AkimBerreqia/EPFL-CodEx/blob/main/Mise%20%C3%80%20Niveau/school_test.ipynb)
@@ -18,3 +19,7 @@
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%2011-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/blob/main/Mise%20%C3%80%20Niveau/TP11.ipynb)
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%2012-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/blob/main/Mise%20%C3%80%20Niveau/TP12.ipynb)
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%2013-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/blob/main/Mise%20%C3%80%20Niveau/TP13.ipynb)
+
+## [BA2](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/PPOO) (We love Schinz <3)
+[![Static Badge](https://img.shields.io/badge/S%C3%A9rie%201-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/PPOO/Serie_1)
+[![Static Badge](https://img.shields.io/badge/S%C3%A9rie%202-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/PPOO/Serie_2/CIM1)
