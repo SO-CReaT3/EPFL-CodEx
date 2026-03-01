@@ -1,4 +1,11 @@
+> [!CAUTION]
+> There is a chance that my work is biased and that my answers are not correct for all Series.
+> I do not take any responsability if you decide to use my code on your own and start having problems with it.
+
 # EPFL-CodEx
+> [!NOTE]
+> This is all my programming homeworks up to now, of my Computer Science life as a student at the EPFL.
+> I will try to stay up to date with this repository :D
 
 ## [Mise À Niveau (MÀN)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/Mise%20%C3%80%20Niveau)
 ### Test files
