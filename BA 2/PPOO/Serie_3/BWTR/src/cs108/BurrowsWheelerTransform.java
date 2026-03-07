@@ -69,6 +69,25 @@ public final class BurrowsWheelerTransform {
     }
 
     public static String backward(Pair<Integer, String> p) {
-        throw new Error("à faire");
+        String[] pStringToArray = p.second().split("");
+        String[] orderedChainRotations = new String[pStringToArray.length];
+
+        if ((p.first() < 0 || p.first() > p.second().length() - 1)) {
+            throw new IndexOutOfBoundsException ("Index out of bounds");
+        } else {
+            for (int i = 0; i < p.second().length(); i++) {
+                for (int j = 0; j < orderedChainRotations.length; j++) {
+                    if (orderedChainRotations[j] == null) {
+                        orderedChainRotations[j] = pStringToArray[j];
+                    } else {
+                        orderedChainRotations[j] = pStringToArray[j] + orderedChainRotations[j];
+                    }
+                }
+
+                Arrays.sort(orderedChainRotations);
+            }
+
+            return orderedChainRotations[p.first()];
+        }
     }
 }
