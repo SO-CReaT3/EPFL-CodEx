@@ -31,3 +31,4 @@
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%201-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/PPOO/Serie_1)
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%202-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/PPOO/Serie_2/CIM1)
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%203-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/PPOO/Serie_3/BWTR)
+[![Static Badge](https://img.shields.io/badge/S%C3%A9rie%204-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/PPOO/Serie_4/LSYS)
