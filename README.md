@@ -27,8 +27,20 @@
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%2012-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/blob/main/Mise%20%C3%80%20Niveau/TP12.ipynb)
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%2013-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/blob/main/Mise%20%C3%80%20Niveau/TP13.ipynb)
 
-## [BA2](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/PPOO) (We love Schinz <3)
+## [BA2](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/PPOO)
+
+### [POOP (Practice of the Object Oriented Programming)]()
+> [!NOTE]
+> (We love Schinz <3)
+
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%201-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/PPOO/Serie_1)
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%202-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/PPOO/Serie_2/CIM1)
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%203-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/PPOO/Serie_3/BWTR)
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%204-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/PPOO/Serie_4/LSYS)
+
+### [FDS (Fundamentals of Digital Systems)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/FDS)
+> [!NOTE]
+> We have started using `Logisim-Evolution` and [`Verilog`](https://en.wikipedia.org/wiki/Verilog) on Week 5.
+> For more details about the installations for all the environment needed during the semester, here is the [tutorial proposed by Professor Mirjana Stojilovic](https://github.com/SO-CReaT3/EPFL-CodEx/blob/main/BA%202/FDS/FDS_tutorial.pdf).
+
+[![Static Badge](https://img.shields.io/badge/S%C3%A9rie%209-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/FDS/Serie%209)
