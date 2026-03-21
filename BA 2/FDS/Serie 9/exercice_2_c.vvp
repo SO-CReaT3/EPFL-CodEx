@@ -1,0 +1,94 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_089DD078 .scope module, "test_exercice_2_c" "test_exercice_2_c" 2 1;
+ .timescale 0 0;
+v088877B0_0 .var "Cin1", 0 0;
+v08887A70_0 .var "Cin2", 0 0;
+v08887BD0_0 .net "Cout1", 0 0, L_08861398; 1 drivers
+v08887968_0 .net "Cout2", 0 0, L_08861210; 1 drivers
+v08887B20_0 .var/i "i", 31 0;
+v088879C0_0 .net "s1", 0 0, L_089D47F8; 1 drivers
+v08887758_0 .net "s2", 0 0, L_08861408; 1 drivers
+v08887AC8_0 .var "x1", 0 0;
+v08887808_0 .var "x2", 0 0;
+v08887860_0 .var "y1", 0 0;
+v088878B8_0 .var "y2", 0 0;
+S_088522B8 .scope module, "FA1" "full_adder1" 2 16, 3 1, S_089DD078;
+ .timescale 0 0;
+L_089D4718 .functor XOR 1, v08887AC8_0, v08887860_0, C4<0>, C4<0>;
+L_089D47C0 .functor AND 1, v08887AC8_0, v08887860_0, C4<1>, C4<1>;
+L_089D47F8 .functor XOR 1, v088877B0_0, L_089D4718, C4<0>, C4<0>;
+L_08861478 .functor AND 1, v088877B0_0, L_089D4718, C4<1>, C4<1>;
+L_08861398 .functor OR 1, L_08861478, L_089D47C0, C4<0>, C4<0>;
+v089DEBA0_0 .net "Cin", 0 0, v088877B0_0; 1 drivers
+v089DECA8_0 .alias "Cout", 0 0, v08887BD0_0;
+v089DEA40_0 .alias "s", 0 0, v088879C0_0;
+v089DEAF0_0 .net "w1", 0 0, L_089D4718; 1 drivers
+v089DEC50_0 .net "w2", 0 0, L_089D47C0; 1 drivers
+v08887A18_0 .net "w3", 0 0, L_08861478; 1 drivers
+v08887B78_0 .net "x", 0 0, v08887AC8_0; 1 drivers
+v08887910_0 .net "y", 0 0, v08887860_0; 1 drivers
+S_08851B48 .scope module, "FA2" "full_adder2" 2 17, 3 37, S_089DD078;
+ .timescale 0 0;
+L_08861210 .functor OR 1, L_08861130, L_08861360, C4<0>, C4<0>;
+v089DEDB0_0 .net "Cin", 0 0, v08887A70_0; 1 drivers
+v089DE780_0 .alias "Cout", 0 0, v08887968_0;
+v089DEA98_0 .alias "s", 0 0, v08887758_0;
+v089DE888_0 .net "w1", 0 0, L_08861328; 1 drivers
+v089DEBF8_0 .net "w2", 0 0, L_08861360; 1 drivers
+v089DE8E0_0 .net "w3", 0 0, L_08861130; 1 drivers
+v089DE938_0 .net "x", 0 0, v08887808_0; 1 drivers
+v089DE9E8_0 .net "y", 0 0, v088878B8_0; 1 drivers
+S_08851A38 .scope module, "HA1" "half_adder" 3 47, 3 25, S_08851B48;
+ .timescale 0 0;
+L_08861328 .functor XOR 1, v08887808_0, v088878B8_0, C4<0>, C4<0>;
+L_08861360 .functor AND 1, v08887808_0, v088878B8_0, C4<1>, C4<1>;
+v089DEE08_0 .alias "Cout", 0 0, v089DEBF8_0;
+v089DE990_0 .alias "s", 0 0, v089DE888_0;
+v089DED58_0 .alias "x", 0 0, v089DE938_0;
+v089DEE60_0 .alias "y", 0 0, v089DE9E8_0;
+S_08852560 .scope module, "HA2" "half_adder" 3 48, 3 25, S_08851B48;
+ .timescale 0 0;
+L_08861408 .functor XOR 1, v08887A70_0, L_08861328, C4<0>, C4<0>;
+L_08861130 .functor AND 1, v08887A70_0, L_08861328, C4<1>, C4<1>;
+v089DED00_0 .alias "Cout", 0 0, v089DE8E0_0;
+v089DEEB8_0 .alias "s", 0 0, v08887758_0;
+v089DE830_0 .alias "x", 0 0, v089DEDB0_0;
+v089DE7D8_0 .alias "y", 0 0, v089DE888_0;
+    .scope S_089DD078;
+T_0 ;
+    %vpi_call 2 25 "$dumpfile", "exercice_2_c.vcd";
+    %vpi_call 2 26 "$dumpvars";
+    %vpi_call 2 28 "$monitor", "FA1 : Time %2t, x1=%b, y1=%b, Cin1=%b, s1=%b, Cout1=%b; FA2 : Time %2t, x2=%b, y2=%b, Cin2=%b, s2=%b, Cout2=%b", $time, v08887AC8_0, v08887860_0, v088877B0_0, v088879C0_0, v08887BD0_0, $time, v08887808_0, v088878B8_0, v08887A70_0, v08887758_0, v08887968_0;
+    %set/v v08887B20_0, 0, 32;
+T_0.0 ;
+    %load/v 8, v08887B20_0, 32;
+   %cmpi/s 8, 8, 32;
+    %jmp/0xz T_0.1, 5;
+    %load/v 8, v08887B20_0, 32;
+    %set/v v088877B0_0, 8, 1;
+    %set/v v08887860_0, 9, 1;
+    %set/v v08887AC8_0, 10, 1;
+    %load/v 8, v08887B20_0, 32;
+    %set/v v08887A70_0, 8, 1;
+    %set/v v088878B8_0, 9, 1;
+    %set/v v08887808_0, 10, 1;
+    %delay 1, 0;
+    %ix/load 0, 1, 0;
+    %load/vp0/s 8, v08887B20_0, 32;
+    %set/v v08887B20_0, 8, 32;
+    %jmp T_0.0;
+T_0.1 ;
+    %vpi_call 2 42 "$finish";
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "exercice_2_c_tb.v";
+    "exercice_2_c.v";
