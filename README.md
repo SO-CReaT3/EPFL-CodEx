@@ -29,7 +29,7 @@
 
 ## [BA2](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/PPOO)
 
-### [POOP (Practice of the Object Oriented Programming)]()
+### [POOP (Practice of the Object Oriented Programming)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/POOP)
 > [!NOTE]
 > (We love Schinz <3)
 
