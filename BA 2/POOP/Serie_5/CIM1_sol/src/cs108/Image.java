@@ -24,6 +24,10 @@ public interface Image<T> {
 
     // -------- static methods (from classes with constructors) --------
 
+    public static <U> Image<U> constant(U u) {
+        return (x, y) -> u;
+    }
+
     public static Image<Double> mandelbrot (int maxIt) {
         return (x, y) -> {
             final ImmutableComplexNumber c = new ImmutableComplexNumber(x, y);

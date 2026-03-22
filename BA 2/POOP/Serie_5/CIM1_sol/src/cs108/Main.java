@@ -10,6 +10,8 @@ public final class Main {
     public static void main(String[] args) {
         // L'image à afficher, à modifier au fur et à mesure de
         // votre avancement.
+
+        // Exercice 1
         /**
         Image<ColorRGB> image = Image.composed(
                 Image.RED_DISK,
@@ -19,10 +21,19 @@ public final class Main {
 
         // Image<ColorRGB> rotatedComposed = image.rotated(Math.toRadians(10));
 
+        // Exercice 2
+        /**
         Image<ColorRGB> image = Image.composed(
                 Image.RED_DISK,
                 Image.chessboard(ColorRGB.BLACK, ColorRGB.WHITE, 1).rotated(Math.toRadians(10)),
                 Image.mandelbrot(100));
+        **/
+
+        // Bonus
+        Image<ColorRGB> white = Image.constant(ColorRGB.WHITE);
+        Image<ColorRGB> black = Image.constant(ColorRGB.BLACK);
+        Image<Double> m = Image.mandelbrot(100);
+        Image<ColorRGB> image = Image.composed(white, black, m);
 
         invokeLater(() -> {
             var mainWindow = new JFrame("Image viewer");
