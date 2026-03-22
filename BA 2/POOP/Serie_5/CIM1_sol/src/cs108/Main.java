@@ -10,19 +10,26 @@ public final class Main {
     public static void main(String[] args) {
         // L'image à afficher, à modifier au fur et à mesure de
         // votre avancement.
-        Image<ColorRGB> image = new Composed(
-                RedDisk.IMAGE,
-                new Rotated<>(new Chessboard(ColorRGB.BLACK, ColorRGB.WHITE, 1), Math.toRadians(10)),
-                HorizontalGradientMask.IMAGE);
+        /**
+        Image<ColorRGB> image = Image.composed(
+                Image.RED_DISK,
+                Image.chessboard(ColorRGB.BLACK, ColorRGB.WHITE, 1).rotated(Math.toRadians(10)),
+                Image.HORIZONTAL_GRADIENT_MASK);
+        **/
 
         // Image<ColorRGB> rotatedComposed = image.rotated(Math.toRadians(10));
+
+        Image<ColorRGB> image = Image.composed(
+                Image.RED_DISK,
+                Image.chessboard(ColorRGB.BLACK, ColorRGB.WHITE, 1).rotated(Math.toRadians(10)),
+                Image.mandelbrot(100));
 
         invokeLater(() -> {
             var mainWindow = new JFrame("Image viewer");
             mainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
             mainWindow.getContentPane().setLayout(new BorderLayout());
-            var imageComponent = new ImageComponent(image, 0, 0, 4);
+            var imageComponent = new ImageComponent(image, -0.6, 0, 4);
             mainWindow.getContentPane().add(imageComponent, BorderLayout.CENTER);
 
             mainWindow.pack();

@@ -24,13 +24,32 @@ public interface Image<T> {
 
     // -------- static methods (from classes with constructors) --------
 
+    public static Image<Double> mandelbrot (int maxIt) {
+        return (x, y) -> {
+            final ImmutableComplexNumber c = new ImmutableComplexNumber(x, y);
+
+            int m = 0;
+            ImmutableComplexNumber z = new ImmutableComplexNumber(0, 0);
+
+            System.out.println("m : " + m + ", z.module() : " + z.module());
+
+            while (m < maxIt && z.module() < 2) {
+                m++;
+                z = ImmutableComplexNumber.copyOf(z.square().add(c));
+
+                System.out.println("m : " + m + ", z.module() : " + z.module());
+            }
+            return (double)m / (double)maxIt;
+        };
+    }
+
     public static Image<ColorRGB> chessboard(ColorRGB c1, ColorRGB c2, double w) {
         if (!(w > 0))
             throw new IllegalArgumentException("non-positive width: " + w);
 
         return (x, y) -> {
-            int sqX = (int) floor(x / w), sqY = (int) floor(y / w);
-            return (sqX * sqX) % 2 == 0 ? c1 : c2;
+            int sqX = (int)floor(x / w), sqY = (int)floor(y / w);
+            return (sqX + sqY) % 2 == 0 ? c1 : c2;
         };
     }
 
