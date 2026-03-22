@@ -18,9 +18,7 @@ public interface Image<T> {
         return r <= 1d ? ColorRGB.RED : ColorRGB.WHITE;
     };
 
-    public static final Image<Double> HORIZONTAL_GRADIENT_MASK = (x, y) -> {
-        return max(0, min((x + 1d) / 2d, 1d));
-    };
+    public static final Image<Double> HORIZONTAL_GRADIENT_MASK = (x, y) -> max(0, min((x + 1d) / 2d, 1d));
 
     // -------- static methods (from classes with constructors) --------
 
