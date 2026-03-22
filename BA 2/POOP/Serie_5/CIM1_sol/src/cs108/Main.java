@@ -15,6 +15,8 @@ public final class Main {
                 new Rotated<>(new Chessboard(ColorRGB.BLACK, ColorRGB.WHITE, 1), Math.toRadians(10)),
                 HorizontalGradientMask.IMAGE);
 
+        // Image<ColorRGB> rotatedComposed = image.rotated(Math.toRadians(10));
+
         invokeLater(() -> {
             var mainWindow = new JFrame("Image viewer");
             mainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
