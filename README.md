@@ -41,7 +41,7 @@
 
 ### [FDS (Fundamentals of Digital Systems)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/FDS)
 > [!NOTE]
-> We have started using `Logisim-Evolution` and [`Verilog`](https://en.wikipedia.org/wiki/Verilog) on Week 5.
+> We have started using `Logisim-Evolution` and [`Verilog`](https://en.wikipedia.org/wiki/Verilog) on Week 5 (Série 9).
 > For more details about the installations for all the environment needed during the semester, here is the [tutorial proposed by Professor Mirjana Stojilovic](https://github.com/SO-CReaT3/EPFL-CodEx/blob/main/BA%202/FDS/FDS_tutorial.pdf).
 
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%209-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/FDS/Serie%209)
