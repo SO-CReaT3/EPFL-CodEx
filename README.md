@@ -46,4 +46,4 @@
 
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%209-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/FDS/Serie%209)
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%2010-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/FDS/Serie%2010)
-[![Static Badge](https://img.shields.io/badge/S%C3%A9rie%2010-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/FDS/Serie%2011)
+[![Static Badge](https://img.shields.io/badge/S%C3%A9rie%2011-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/FDS/Serie%2011)
