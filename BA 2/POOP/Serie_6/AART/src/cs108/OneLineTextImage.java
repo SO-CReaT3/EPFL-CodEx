@@ -3,7 +3,7 @@ package cs108;
 public final class OneLineTextImage implements TextImage {
     private final String imageString;
 
-    public OneLineTextImage(String imageString){
+    public OneLineTextImage(String imageString) {
         this.imageString = imageString;
     }
 

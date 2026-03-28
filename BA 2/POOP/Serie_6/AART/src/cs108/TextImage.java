@@ -15,11 +15,21 @@ public interface TextImage {
         }
     }
 
+    // ------------ Exercice 1 ------------
     static OneLineTextImage fromString(String imageString) {
         return new OneLineTextImage(imageString);
     }
 
     static FilledTextImage filled(int width, int height, char charToFill) {
         return new FilledTextImage(width, height, charToFill);
+    }
+
+    // ------------ Exercice 2 ------------
+    default TextImage flippedHorizontally() {
+        return new FlippedHorizontalTextImage(this);
+    }
+
+    default TextImage transposed() {
+        return new TransposedTextImage(this);
     }
 }

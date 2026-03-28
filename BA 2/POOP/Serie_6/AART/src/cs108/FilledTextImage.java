@@ -18,7 +18,7 @@ public final class FilledTextImage implements TextImage {
         return width;
     }
 
-    @Override
+    @   Override
     public int height() {
         return height;
     }
