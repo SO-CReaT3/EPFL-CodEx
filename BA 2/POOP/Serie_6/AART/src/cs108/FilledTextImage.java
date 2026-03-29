@@ -11,8 +11,6 @@ public final class FilledTextImage implements TextImage {
         imageString = Character.toString(charToFill).repeat(width * height);
         this.width = width;
         this.height = height;
-
-        System.out.println("Width: " + width() + " Height: " + height());
     }
 
     @Override

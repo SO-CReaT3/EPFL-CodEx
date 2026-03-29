@@ -18,8 +18,6 @@ public final class TransposedTextImage implements TextImage {
         }
 
         this.imageString = imageStringBuilder.toString();
-
-        System.out.println("Width: " + width() + " Height: " + height());
     }
 
     @Override

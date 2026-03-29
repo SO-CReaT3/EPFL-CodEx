@@ -3,14 +3,14 @@ package cs108;
 import java.util.StringJoiner;
 
 public final class SideBySideCompositeTextImage implements TextImage {
-    private final TextImage initialImage;
+    private TextImage image;
 
     private String imageString;
     private int width;
     private int height;
 
     public SideBySideCompositeTextImage(TextImage image) {
-        this.initialImage = image;
+        this.image = image;
         this.width = image.width();
         this.height = image.height();
     }
@@ -21,7 +21,7 @@ public final class SideBySideCompositeTextImage implements TextImage {
         for (int h = 0; h < Math.max(this.height(), that.height()); h++) {
             for (int w = 0; w < this.width(); w++) {
                 if (h > this.height() - 1) composite.append(" ");
-                else composite.append(initialImage.charAt(w, h));
+                else composite.append(image.charAt(w, h));
             }
 
             for (int w = 0; w < that.width(); w++) {
@@ -33,9 +33,8 @@ public final class SideBySideCompositeTextImage implements TextImage {
         width = this.width() + that.width();
         height = Math.max(this.height(), that.height());
 
-        System.out.println("Width: " + width + " Height: " + height);
-
         imageString = composite.toString();
+        image = this;
 
         return this;
     }

@@ -3,14 +3,14 @@ package cs108;
 import java.util.StringJoiner;
 
 public final class AboveOtherCompositeTextImage implements TextImage {
-    private final TextImage initialImage;
+    private TextImage image;
 
     private String imageString;
     private int width;
     private int height;
 
     public AboveOtherCompositeTextImage(TextImage image) {
-        this.initialImage = image;
+        this.image = image;
         this.width = image.width();
         this.height = image.height();
     }
@@ -21,7 +21,7 @@ public final class AboveOtherCompositeTextImage implements TextImage {
         for (int h = 0; h < this.height(); h++) {
             for (int w = 0; w < Math.max(this.width(), that.width()); w++) {
                 if (w > this.width() - 1) composite.append(" ");
-                else composite.append(initialImage.charAt(w, h));
+                else composite.append(image.charAt(w, h));
             }
         }
 
@@ -35,9 +35,8 @@ public final class AboveOtherCompositeTextImage implements TextImage {
         width = Math.max(this.width(), that.width());
         height = this.height + that.height();
 
-        System.out.println("Width: " + width + " Height: " + height);
-
         imageString = composite.toString();
+        image = this;
 
         return this;
     }
@@ -54,6 +53,6 @@ public final class AboveOtherCompositeTextImage implements TextImage {
 
     @Override
     public char charAt(int x, int y) {
-        return imageString.charAt(y * width + x);
+        return (imageString == null) ? image.charAt(x, y) : imageString.charAt(y * width + x);
     }
 }
