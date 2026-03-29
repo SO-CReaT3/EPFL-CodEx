@@ -38,6 +38,7 @@
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%203-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/POOP/Serie_3)
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%204-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/POOP/Serie_4)
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%205-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/POOP/Serie_5)
+[![Static Badge](https://img.shields.io/badge/S%C3%A9rie%206-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/POOP/Serie_6)
 
 ### [FDS (Fundamentals of Digital Systems)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/FDS)
 > [!NOTE]
