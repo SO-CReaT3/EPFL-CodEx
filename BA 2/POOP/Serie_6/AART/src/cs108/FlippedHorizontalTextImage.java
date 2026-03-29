@@ -12,7 +12,6 @@ public final class FlippedHorizontalTextImage implements TextImage {
             for (int column = image.width() - 1; column >= 0; column--) {
                 imageStringBuilder.append(image.charAt(column, line));
             }
-            if (line < image.height() - 1) imageStringBuilder.append("\n");
         }
 
         this.image = TextImage.fromString(imageStringBuilder.toString());

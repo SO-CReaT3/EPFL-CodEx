@@ -25,5 +25,13 @@ public class Main {
         System.out.println("TextImage.fromString(\"été\").transposed() : ");
         TextImage.fromString("été").transposed().printOn(System.out);
 
+        System.out.println("\n------------ Exercice 3 ------------");
+        System.out.println("TextImage.fromString(\"Un rectangle : \").leftOf(TextImage.filled(3, 2, '#')) : ");
+        TextImage.fromString("Un rectangle : ").leftOf(TextImage.filled(3, 2, '#')).printOn(System.out);
+
+        System.out.println();
+
+        System.out.println("TextImage.filled(3, 1, 'X').above(TextImage.filled(4, 2, 'O')) : ");
+        TextImage.filled(3, 1, 'X').above(TextImage.filled(4, 2, 'O')).printOn(System.out);
     }
 }

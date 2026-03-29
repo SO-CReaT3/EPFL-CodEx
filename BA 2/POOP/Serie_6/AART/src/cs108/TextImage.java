@@ -32,4 +32,13 @@ public interface TextImage {
     default TextImage transposed() {
         return new TransposedTextImage(this);
     }
+
+    // ------------ Exercice 2 ------------
+    default TextImage leftOf(TextImage textImage) {
+        return new SideBySideCompositeTextImage(this).leftOf(textImage);
+    }
+
+    default TextImage above(TextImage textImage) {
+        return new AboveOtherCompositeTextImage(this).above(textImage);
+    }
 }

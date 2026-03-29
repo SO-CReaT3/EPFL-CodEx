@@ -9,7 +9,6 @@ public final class TransposedTextImage implements TextImage {
             for (int line = 0; line < image.height(); line++) {
                 imageStringBuilder.append(image.charAt(column, line));
             }
-            imageStringBuilder.append("\n");
         }
 
         this.image = TextImage.fromString(imageStringBuilder.toString());
@@ -17,16 +16,16 @@ public final class TransposedTextImage implements TextImage {
 
     @Override
     public int width() {
-        return image.width();
-    }
-
-    @Override
-    public int height() {
         return image.height();
     }
 
     @Override
+    public int height() {
+        return image.width();
+    }
+
+    @Override
     public char charAt(int x, int y) {
-        return image.charAt(x, y);
+        return image.charAt(y, x);
     }
 }
