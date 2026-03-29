@@ -4,31 +4,37 @@ import javax.swing.*;
 import java.awt.*;
 
 public final class FlippedHorizontalTextImage implements TextImage {
-    private final TextImage image;
+    private final String imageString;
+    private final int width;
+    private final int height;
 
     public FlippedHorizontalTextImage(TextImage image) {
+        this.width = image.width();
+        this.height = image.height();
+
         StringBuilder imageStringBuilder = new StringBuilder();
+
         for (int line = 0; line < image.height(); line++) {
             for (int column = image.width() - 1; column >= 0; column--) {
                 imageStringBuilder.append(image.charAt(column, line));
             }
         }
 
-        this.image = TextImage.fromString(imageStringBuilder.toString());
+        this.imageString = imageStringBuilder.toString();
     }
 
     @Override
     public int width() {
-        return image.width();
+        return width;
     }
 
     @Override
     public int height() {
-        return image.height();
+        return height;
     }
 
     @Override
     public char charAt(int x, int y) {
-        return image.charAt(x, y);
+        return imageString.charAt(y * width + x);
     }
 }

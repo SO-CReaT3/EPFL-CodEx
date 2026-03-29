@@ -33,7 +33,7 @@ public interface TextImage {
         return new TransposedTextImage(this);
     }
 
-    // ------------ Exercice 2 ------------
+    // ------------ Exercice 3 ------------
     default TextImage leftOf(TextImage textImage) {
         return new SideBySideCompositeTextImage(this).leftOf(textImage);
     }

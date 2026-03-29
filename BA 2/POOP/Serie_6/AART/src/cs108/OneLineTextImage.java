@@ -5,6 +5,8 @@ public final class OneLineTextImage implements TextImage {
 
     public OneLineTextImage(String imageString) {
         this.imageString = imageString;
+
+        System.out.println("Width: " + width() + " Height: " + height());
     }
 
     @Override
