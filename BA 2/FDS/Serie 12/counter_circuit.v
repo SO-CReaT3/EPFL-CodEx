@@ -9,8 +9,6 @@ module counter_circuit (
     wire enable_y;
 
     reg [3:0] D = 'b0000;
-    reg [3:0] Q_x = 'b0000;
-    reg [3:0] Q_y = 'b0000;
 
     wire load_x;
     wire load_y;

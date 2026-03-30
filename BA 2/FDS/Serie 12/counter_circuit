@@ -4,121 +4,109 @@
 :vpi_module "system";
 :vpi_module "v2005_math";
 :vpi_module "va_math";
-S_08BF8E90 .scope module, "tb_counter_circuit" "tb_counter_circuit" 2 1;
+S_02FD8620 .scope module, "tb_counter_circuit" "tb_counter_circuit" 2 1;
  .timescale 0 0;
-v08A300B0_0 .net "X", 3 0, v08BF3288_0; 1 drivers
-v08A30268_0 .net "Y", 3 0, v08BF32E0_0; 1 drivers
-v08A30210_0 .var "clk", 0 0;
-v08A30420_0 .var "clr", 0 0;
-v08A303C8_0 .var/i "i", 31 0;
-S_08BF8478 .scope module, "DUT" "counter_circuit" 2 6, 3 1, S_08BF8E90;
+v08A55100_0 .net "X", 3 0, v02FDEF78_0; 1 drivers
+v08A54F48_0 .net "Y", 3 0, v08A32198_0; 1 drivers
+v08A551B0_0 .var "clk", 0 0;
+v08A55158_0 .var "clr", 0 0;
+v08A54C88_0 .var/i "i", 31 0;
+S_02FD86A8 .scope module, "DUT" "counter_circuit" 2 6, 3 1, S_02FD8620;
  .timescale 0 0;
-L_08BFA1E8 .functor AND 1, L_08A2FD98, L_08A30108, C4<1>, C4<1>;
-L_08BFA258 .functor OR 1, v08A30420_0, L_08BFA1E8, C4<0>, C4<0>;
-L_08BFA300 .functor AND 1, L_08BFA1E8, L_08A2FDF0, C4<1>, C4<1>;
-L_08BFA098 .functor AND 1, L_08BFA300, L_08A30160, C4<1>, C4<1>;
-L_08BFA028 .functor OR 1, v08A30420_0, L_08BFA098, C4<0>, C4<0>;
-v08A322E8_0 .var "D", 3 0;
-v08A32340_0 .var "Q_x", 3 0;
-v08A32398_0 .var "Q_y", 3 0;
-v08BF3288_0 .var "X", 3 0;
-v08BF32E0_0 .var "Y", 3 0;
-v08BF3338_0 .net *"_s11", 0 0, L_08A2FDF0; 1 drivers
-v08BFA488_0 .net *"_s12", 0 0, L_08BFA300; 1 drivers
-v08BFA4E0_0 .net *"_s15", 0 0, L_08A30160; 1 drivers
-v08BFA538_0 .net *"_s16", 0 0, L_08BFA098; 1 drivers
-v08BFA590_0 .net *"_s3", 0 0, L_08A2FD98; 1 drivers
-v08BFA5E8_0 .net *"_s5", 0 0, L_08A30108; 1 drivers
-v08A30370_0 .net "clk", 0 0, v08A30210_0; 1 drivers
-v08A2FFA8_0 .net "clr", 0 0, v08A30420_0; 1 drivers
-v08A30000_0 .net "enable_x", 0 0, C4<1>; 1 drivers
-v08A301B8_0 .net "enable_y", 0 0, L_08BFA1E8; 1 drivers
-v08A30058_0 .net "load_x", 0 0, L_08BFA258; 1 drivers
-v08A2FF50_0 .net "load_y", 0 0, L_08BFA028; 1 drivers
-E_08BFACC8 .event posedge, v08A30370_0;
-L_08A2FD98 .part v08BF3288_0, 0, 1;
-L_08A30108 .part v08BF3288_0, 3, 1;
-L_08A2FDF0 .part v08BF32E0_0, 0, 1;
-L_08A30160 .part v08BF32E0_0, 3, 1;
-    .scope S_08BF8478;
+L_02FDA028 .functor AND 1, L_08A54E40, L_08A54D90, C4<1>, C4<1>;
+L_08A55410 .functor OR 1, v08A55158_0, L_02FDA028, C4<0>, C4<0>;
+L_08A55470 .functor AND 1, L_02FDA028, L_08A54C30, C4<1>, C4<1>;
+L_08A55518 .functor AND 1, L_08A55470, L_08A55368, C4<1>, C4<1>;
+L_08A55588 .functor OR 1, v08A55158_0, L_08A55518, C4<0>, C4<0>;
+v08A32140_0 .var "D", 3 0;
+v02FDEF78_0 .var "X", 3 0;
+v08A32198_0 .var "Y", 3 0;
+v08A321F0_0 .net *"_s11", 0 0, L_08A54C30; 1 drivers
+v02FD3288_0 .net *"_s12", 0 0, L_08A55470; 1 drivers
+v02FD32E0_0 .net *"_s15", 0 0, L_08A55368; 1 drivers
+v02FD3338_0 .net *"_s16", 0 0, L_08A55518; 1 drivers
+v02FD9E90_0 .net *"_s3", 0 0, L_08A54E40; 1 drivers
+v02FD9EE8_0 .net *"_s5", 0 0, L_08A54D90; 1 drivers
+v02FD9F40_0 .net "clk", 0 0, v08A551B0_0; 1 drivers
+v02FD9F98_0 .net "clr", 0 0, v08A55158_0; 1 drivers
+v08A54D38_0 .net "enable_x", 0 0, C4<1>; 1 drivers
+v08A54CE0_0 .net "enable_y", 0 0, L_02FDA028; 1 drivers
+v08A54EF0_0 .net "load_x", 0 0, L_08A55410; 1 drivers
+v08A550A8_0 .net "load_y", 0 0, L_08A55588; 1 drivers
+E_08A33818 .event posedge, v02FD9F40_0;
+L_08A54E40 .part v02FDEF78_0, 0, 1;
+L_08A54D90 .part v02FDEF78_0, 3, 1;
+L_08A54C30 .part v08A32198_0, 0, 1;
+L_08A55368 .part v08A32198_0, 3, 1;
+    .scope S_02FD86A8;
 T_0 ;
-    %set/v v08A322E8_0, 0, 4;
+    %set/v v08A32140_0, 0, 4;
     %end;
     .thread T_0;
-    .scope S_08BF8478;
+    .scope S_02FD86A8;
 T_1 ;
-    %set/v v08A32340_0, 0, 4;
-    %end;
+    %wait E_08A33818;
+    %load/v 8, v08A54EF0_0, 1;
+    %jmp/0xz  T_1.0, 8;
+    %load/v 8, v08A32140_0, 4;
+    %set/v v02FDEF78_0, 8, 4;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/v 8, v08A54D38_0, 1;
+    %jmp/0xz  T_1.2, 8;
+    %ix/load 0, 1, 0;
+    %load/vp0 8, v02FDEF78_0, 4;
+    %set/v v02FDEF78_0, 8, 4;
+T_1.2 ;
+T_1.1 ;
+    %load/v 8, v08A550A8_0, 1;
+    %jmp/0xz  T_1.4, 8;
+    %load/v 8, v08A32140_0, 4;
+    %set/v v08A32198_0, 8, 4;
+    %jmp T_1.5;
+T_1.4 ;
+    %load/v 8, v08A54CE0_0, 1;
+    %jmp/0xz  T_1.6, 8;
+    %ix/load 0, 1, 0;
+    %load/vp0 8, v08A32198_0, 4;
+    %set/v v08A32198_0, 8, 4;
+T_1.6 ;
+T_1.5 ;
+    %jmp T_1;
     .thread T_1;
-    .scope S_08BF8478;
+    .scope S_02FD8620;
 T_2 ;
-    %set/v v08A32398_0, 0, 4;
-    %end;
-    .thread T_2;
-    .scope S_08BF8478;
-T_3 ;
-    %wait E_08BFACC8;
-    %load/v 8, v08A30058_0, 1;
-    %jmp/0xz  T_3.0, 8;
-    %load/v 8, v08A322E8_0, 4;
-    %set/v v08BF3288_0, 8, 4;
-    %jmp T_3.1;
-T_3.0 ;
-    %load/v 8, v08A30000_0, 1;
-    %jmp/0xz  T_3.2, 8;
-    %ix/load 0, 1, 0;
-    %load/vp0 8, v08BF3288_0, 4;
-    %set/v v08BF3288_0, 8, 4;
-T_3.2 ;
-T_3.1 ;
-    %load/v 8, v08A2FF50_0, 1;
-    %jmp/0xz  T_3.4, 8;
-    %load/v 8, v08A322E8_0, 4;
-    %set/v v08BF32E0_0, 8, 4;
-    %jmp T_3.5;
-T_3.4 ;
-    %load/v 8, v08A301B8_0, 1;
-    %jmp/0xz  T_3.6, 8;
-    %ix/load 0, 1, 0;
-    %load/vp0 8, v08BF32E0_0, 4;
-    %set/v v08BF32E0_0, 8, 4;
-T_3.6 ;
-T_3.5 ;
-    %jmp T_3;
-    .thread T_3;
-    .scope S_08BF8E90;
-T_4 ;
     %vpi_call 2 16 "$dumpfile", "tb_counter_circuit.vcd";
-    %vpi_call 2 17 "$dumpvars", 1'sb0, S_08BF8E90;
-    %set/v v08A30210_0, 0, 1;
-    %set/v v08A30420_0, 1, 1;
+    %vpi_call 2 17 "$dumpvars", 1'sb0, S_02FD8620;
+    %set/v v08A551B0_0, 0, 1;
+    %set/v v08A55158_0, 1, 1;
     %delay 10, 0;
-    %set/v v08A30420_0, 0, 1;
+    %set/v v08A55158_0, 0, 1;
     %delay 5, 0;
-    %vpi_call 2 22 "$display", "Y = %d, X = %d", v08A30268_0, v08A300B0_0;
-    %set/v v08A303C8_0, 0, 32;
-T_4.0 ;
-    %load/v 8, v08A303C8_0, 32;
+    %vpi_call 2 22 "$display", "Y = %d, X = %d", v08A54F48_0, v08A55100_0;
+    %set/v v08A54C88_0, 0, 32;
+T_2.0 ;
+    %load/v 8, v08A54C88_0, 32;
    %cmpi/s 8, 103, 32;
-    %jmp/0xz T_4.1, 5;
+    %jmp/0xz T_2.1, 5;
     %delay 10, 0;
-    %vpi_call 2 24 "$display", "Y = %d, X = %d", v08A30268_0, v08A300B0_0;
+    %vpi_call 2 24 "$display", "Y = %d, X = %d", v08A54F48_0, v08A55100_0;
     %ix/load 0, 1, 0;
-    %load/vp0/s 8, v08A303C8_0, 32;
-    %set/v v08A303C8_0, 8, 32;
-    %jmp T_4.0;
-T_4.1 ;
+    %load/vp0/s 8, v08A54C88_0, 32;
+    %set/v v08A54C88_0, 8, 32;
+    %jmp T_2.0;
+T_2.1 ;
     %vpi_call 2 26 "$finish";
     %end;
-    .thread T_4;
-    .scope S_08BF8E90;
-T_5 ;
+    .thread T_2;
+    .scope S_02FD8620;
+T_3 ;
     %delay 5, 0;
-    %load/v 8, v08A30210_0, 1;
+    %load/v 8, v08A551B0_0, 1;
     %inv 8, 1;
-    %set/v v08A30210_0, 8, 1;
-    %jmp T_5;
-    .thread T_5;
+    %set/v v08A551B0_0, 8, 1;
+    %jmp T_3;
+    .thread T_3;
 # The file index is used to find the file name in the following table.
 :file_names 4;
     "N/A";
