@@ -43,9 +43,10 @@
 ### [FDS (Fundamentals of Digital Systems)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/FDS)
 > [!NOTE]
 > We have started using `Logisim-Evolution` and [`Verilog`](https://en.wikipedia.org/wiki/Verilog) on Week 5 (Série 9).
-> For more details about the installations for all the environment needed during the semester, here is the [tutorial proposed by Professor Mirjana Stojilovic](https://github.com/SO-CReaT3/EPFL-CodEx/blob/main/BA%202/FDS/FDS_tutorial.pdf).
+> For more details about the installations for all the environment needed during the semester, here is the [tutorial proposed by Professor Mirjana Stojilovic](https://github.com/SO-CReaT3/EPFL-CodEx/blob/main/BA%202/FDS/FDS_tutorial.pdf). If you still have some trouble with verilog environment, there is a [Verilog Troubleshooting and Tips](https://github.com/SO-CReaT3/EPFL-CodEx/blob/main/BA%202/FDS/CS-173%20Verilog%20Troubleshooting%20and%20Tips.pdf) available on this repository :D
 
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%209-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/FDS/Serie%209)
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%2010-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/FDS/Serie%2010)
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%2011-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/FDS/Serie%2011)
 [![Static Badge](https://img.shields.io/badge/S%C3%A9rie%2012-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/FDS/Serie%2012)
+[![Static Badge](https://img.shields.io/badge/S%C3%A9rie%2014-blue)](https://github.com/SO-CReaT3/EPFL-CodEx/tree/main/BA%202/FDS/Serie%2014)
