@@ -1,0 +1,99 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_02F49278 .scope module, "tb_exam2024_Question5" "tb_exam2024_Question5" 2 1;
+ .timescale 0 0;
+v08A2FF10_0 .var "a", 0 0;
+v08A2F990_0 .var "b", 0 0;
+v08A2FE60_0 .var "c", 0 0;
+v08A2FC50_0 .net "f", 0 0, v08A32900_0; 1 drivers
+v08A2FA98_0 .var/i "i", 31 0;
+v08A2FCA8_0 .var "w", 0 0;
+v08A2FD00_0 .var "z", 0 0;
+S_02F48C18 .scope module, "peepee" "global_circuit" 2 6, 3 19, S_02F49278;
+ .timescale 0 0;
+L_02F4A278 .functor OR 1, v08A2FF10_0, v08A2F990_0, C4<0>, C4<0>;
+L_02F4A320 .functor NOT 1, L_02F4A278, C4<0>, C4<0>, C4<0>;
+L_02F4EC60 .functor AND 1, v08A2F990_0, v08A2FE60_0, C4<1>, C4<1>;
+L_02F4EB48 .functor OR 1, v08A2FF10_0, v08A2FE60_0, C4<0>, C4<0>;
+v02F433D0_0 .net *"_s0", 0 0, L_02F4A278; 1 drivers
+v02F444A0_0 .net "a", 0 0, v08A2FF10_0; 1 drivers
+v02F444F8_0 .net "b", 0 0, v08A2F990_0; 1 drivers
+v02F44550_0 .net "c", 0 0, v08A2FE60_0; 1 drivers
+v02F4A220_0 .alias "f", 0 0, v08A2FC50_0;
+v08A2F938_0 .net "i1", 0 0, L_02F4A320; 1 drivers
+v08A2FDB0_0 .net "i2", 0 0, L_02F4EC60; 1 drivers
+v08A2FE08_0 .net "i3", 0 0, L_02F4EB48; 1 drivers
+v08A2FEB8_0 .net "w", 0 0, v08A2FCA8_0; 1 drivers
+v08A2FBF8_0 .net "z", 0 0, v08A2FD00_0; 1 drivers
+S_02F48640 .scope module, "poop" "mux4to1" 3 28, 3 1, S_02F48C18;
+ .timescale 0 0;
+v08A32900_0 .var "f", 0 0;
+v02F4B400_0 .alias "i1", 0 0, v08A2F938_0;
+v02F4B458_0 .alias "i2", 0 0, v08A2FDB0_0;
+v08A32958_0 .alias "i3", 0 0, v08A2FE08_0;
+v08A329B0_0 .net "sin", 1 0, L_08A2FF68; 1 drivers
+v02F43320_0 .alias "w", 0 0, v08A2FEB8_0;
+v02F43378_0 .alias "z", 0 0, v08A2FBF8_0;
+E_02F4A840 .event edge, v08A329B0_0, v02F4B400_0, v02F4B458_0, v08A32958_0;
+L_08A2FF68 .concat [ 1 1 0 0], v08A2FCA8_0, v08A2FD00_0;
+    .scope S_02F48640;
+T_0 ;
+    %wait E_02F4A840;
+    %load/v 8, v08A329B0_0, 2;
+    %cmpi/u 8, 0, 2;
+    %jmp/1 T_0.0, 6;
+    %cmpi/u 8, 1, 2;
+    %jmp/1 T_0.1, 6;
+    %cmpi/u 8, 2, 2;
+    %jmp/1 T_0.2, 6;
+    %cmpi/u 8, 3, 2;
+    %jmp/1 T_0.3, 6;
+    %set/v v08A32900_0, 0, 1;
+    %jmp T_0.5;
+T_0.0 ;
+    %load/v 8, v02F4B400_0, 1;
+    %set/v v08A32900_0, 8, 1;
+    %jmp T_0.5;
+T_0.1 ;
+    %load/v 8, v02F4B458_0, 1;
+    %set/v v08A32900_0, 8, 1;
+    %jmp T_0.5;
+T_0.2 ;
+    %load/v 8, v08A32958_0, 1;
+    %set/v v08A32900_0, 8, 1;
+    %jmp T_0.5;
+T_0.3 ;
+    %set/v v08A32900_0, 1, 1;
+    %jmp T_0.5;
+T_0.5 ;
+    %jmp T_0;
+    .thread T_0, $push;
+    .scope S_02F49278;
+T_1 ;
+    %set/v v08A2FA98_0, 0, 32;
+    %end;
+    .thread T_1;
+    .scope S_02F49278;
+T_2 ;
+    %vpi_call 2 9 "$dumpfile", "exam2024_Question5.vcd";
+    %vpi_call 2 10 "$dumpvars";
+    %set/v v08A2FF10_0, 1, 1;
+    %set/v v08A2F990_0, 0, 1;
+    %set/v v08A2FE60_0, 0, 1;
+    %set/v v08A2FCA8_0, 1, 1;
+    %set/v v08A2FD00_0, 1, 1;
+    %delay 20, 0;
+    %vpi_call 2 19 "$display", "a: %d, b: %d, c: %d, w: %d, z: %d, f: %d", v08A2FF10_0, v08A2F990_0, v08A2FE60_0, v08A2FCA8_0, v08A2FD00_0, v08A2FC50_0;
+    %vpi_call 2 21 "$finish";
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_exam2024_Question5.v";
+    "exam2024_Question5.v";
